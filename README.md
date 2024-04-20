@@ -55,3 +55,22 @@ tune download meta-llama/Meta-Llama-3-8B \
     --hf-token hf_mytokenNot
 
 ... hmm nope it wanted to download stuff again .... fack ... and peeking into that target folder, I can see a bunch of new files, so it does seem to be trying to dump stuff into that folder ... 
+
+Hmmm ... ran the following code and got these results ...
+
+        (llama3) rob@KAUWITB:~/Data/Documents/Github/rkaunismaa/Llama-3-Playground$ tune download meta-llama/Meta-Llama-3-8B --output-dir models --hf-token hf_YesThisIsBogus
+        /home/rob/miniforge3/envs/llama3/lib/python3.11/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+        warnings.warn(
+        Ignoring files matching the following patterns: *.safetensors
+        Successfully downloaded model repo and wrote to the following locations:
+        /home/rob/Data2/huggingface/hub/models--meta-llama--Meta-Llama-3-8B/snapshots/561487d18c41c76bcb5fc6cfb73a324982f04f47/original
+        (llama3) rob@KAUWITB:~/Data/Documents/Github/rkaunismaa/Llama-3-Playground$ 
+
+
+Current value of ... 
+TRANSFORMERS_CACHE=/home/rob/Data2/huggingface/transformers
+
+ ... also,  [llama-recipies](https://github.com/meta-llama/llama-recipes/tree/main) has been updated for llama3 ...
+
+
+
