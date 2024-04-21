@@ -4,6 +4,11 @@ This will be my playground for all things using LLaMa 3
 
 mamba activate llama3
 
+## Sunday, April 21, 2024
+
+Gonna pull down and play with ...
+[cognitivecomputations/dolphin-2.9-llama3-8b](https://huggingface.co/cognitivecomputations/dolphin-2.9-llama3-8b)
+
 ## Saturday, April 20, 2024
 
  1) mamba install conda-forge::openai
