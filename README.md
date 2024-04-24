@@ -4,6 +4,97 @@ This will be my playground for all things using LLaMa 3
 
 mamba activate llama3
 
+## Wednesday, April 24, 2024
+
+Working through Rag-Chatbot.ipynb.
+
+ 12) mamba install conda-forge::gradio
+ 13) mamba install conda-forge::sentence-transformers
+ 14) pip install spaces
+ 15) mamba install pytorch::faiss-gpu
+
+ The install of faiss-gpu changed a lot of libraries in this environment .... 
+
+        Package         Version  Build                         Channel           Size
+        ─────────────────────────────────────────────────────────────────────────────────
+        Install:
+        ─────────────────────────────────────────────────────────────────────────────────
+
+        + libfaiss        1.8.0  h5aaf3ed_0_cuda11.4.4         pytorch          346MB
+        + faiss-gpu       1.8.0  py3.11_hedc54c9_0_cuda11.4.4  pytorch            5MB
+
+        Change:
+        ─────────────────────────────────────────────────────────────────────────────────
+
+        - libblas         3.9.0  16_linux64_mkl                conda-forge     Cached
+        + libblas         3.9.0  20_linux64_mkl                conda-forge       15kB
+        - liblapack       3.9.0  16_linux64_mkl                conda-forge     Cached
+        + liblapack       3.9.0  20_linux64_mkl                conda-forge       14kB
+        - libcblas        3.9.0  16_linux64_mkl                conda-forge     Cached
+        + libcblas        3.9.0  20_linux64_mkl                conda-forge       14kB
+        - liblapacke      3.9.0  16_linux64_mkl                conda-forge     Cached
+        + liblapacke      3.9.0  20_linux64_mkl                conda-forge       14kB
+        - blas-devel      3.9.0  16_linux64_mkl                conda-forge     Cached
+        + blas-devel      3.9.0  20_linux64_mkl                conda-forge       14kB
+
+        Upgrade:
+        ─────────────────────────────────────────────────────────────────────────────────
+
+        - llvm-openmp    15.0.7  h0cdce71_0                    conda-forge     Cached
+        + llvm-openmp    18.1.3  h4dfa4b3_0                    conda-forge       58MB
+        - mkl-include  2022.1.0  h84fe81f_915                  conda-forge     Cached
+        + mkl-include  2023.2.0  h84fe81f_50496                conda-forge      705kB
+        - mkl          2022.1.0  h84fe81f_915                  conda-forge     Cached
+        + mkl          2023.2.0  h84fe81f_50496                conda-forge      164MB
+        - mkl-devel    2022.1.0  ha770c72_916                  conda-forge     Cached
+        + mkl-devel    2023.2.0  ha770c72_50496                conda-forge       30kB
+        - blas            2.116  mkl                           conda-forge     Cached
+        + blas            2.120  mkl                           conda-forge       14kB
+
+        Downgrade:
+        ─────────────────────────────────────────────────────────────────────────────────
+
+        - pytorch         2.2.2  py3.11_cuda11.8_cudnn8.7.0_0  pytorch         Cached
+        + pytorch         2.0.1  py3.11_cuda11.8_cudnn8.7.0_0  pytorch            2GB
+        - torchtriton     2.2.0  py311                         pytorch         Cached
+        + torchtriton     2.0.0  py311                         pytorch           66MB
+        - torchaudio      2.2.2  py311_cu118                   pytorch         Cached
+        + torchaudio      2.0.2  py311_cu118                   pytorch            8MB
+        - torchvision    0.17.2  py311_cu118                   pytorch         Cached
+        + torchvision    0.15.2  py311_cu118                   pytorch            9MB
+
+Dammit .... now the model does not load ... I think I am gonna rebuild this environment!
+
+Yup. Instruct.ipynb which did work is now failing with the same error message. Fack! Gonna kill llama3 and rebuild! ... 
+
+
+ 1) mamb env remove -n llama3
+ 2) mamba create -n llama3 python=3.11
+ 3) mamba activate llama3
+ 4) mamba install conda-forge::jupyterlab
+ 5) mamba install pytorch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 pytorch-cuda=11.8 -c pytorch -c nvidia
+ 6) mamba install conda-forge::faiss-gpu
+ 7) mamba install conda-forge::transformers
+ 8) mamba install conda-forge::sentence-transformers
+
+  ... up to this point, everything installed cleanly without any problems ...
+
+ 9) mamba install conda-forge::accelerate
+10) mamba install conda-forge::bitsandbytes
+11) mamba install conda-forge::wandb
+12) mamba install conda-forge::peft
+13) pip install spaces ... (hmm this installed gradio, matplotlib, pydantic, and a ton of other needed libraries!)
+
+... hmm now getting that error about bitsandbytes ...
+
+    Could not find the bitsandbytes CUDA binary at PosixPath('/home/rob/miniforge3/envs/llama3/lib/python3.11/site-packages/bitsandbytes/libbitsandbytes_cuda118.so')
+    The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+
+14) mamba remove bitsandbytes ... this ran without any issues 
+15) pip install bitsandbytes
+
+... OK Nice! That fixed the problem! ...
+
 ## Sunday, April 21, 2024
 
 Gonna pull down and play with ...
