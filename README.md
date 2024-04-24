@@ -99,6 +99,11 @@ Yup. Instruct.ipynb which did work is now failing with the same error message. F
 17) pip install trl
 18) pip install flash-attn
 
+
+Whelp, rebooted, and ran 'pip install -qqq flash-attn' on the llama3 environment and now the notebook 'Fine_tune_Llama_3_with_ORPO.ipynb' is running! Nice! ... I really wanted to see if I could get this to run locally, and it does! Training puts a real load on the 4090! 
+
+And 'Fine_tune_Llama_3_with_ORPO.ipynb' all runs! Great! (I aborted the upload of the model to HuggingFace cuz it would take forever!)
+
 ## Sunday, April 21, 2024
 
 Gonna pull down and play with ...
