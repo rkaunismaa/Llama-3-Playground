@@ -97,6 +97,7 @@ Yup. Instruct.ipynb which did work is now failing with the same error message. F
 
 16) mamba install conda-forge::ipywidgets
 17) pip install trl
+18) pip install flash-attn
 
 ## Sunday, April 21, 2024
 
