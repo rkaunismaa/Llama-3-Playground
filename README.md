@@ -9,6 +9,8 @@ mamba activate llama3
 Gonna pull down and play with ...
 [cognitivecomputations/dolphin-2.9-llama3-8b](https://huggingface.co/cognitivecomputations/dolphin-2.9-llama3-8b)
 
+12) mamba install conda-forge::ipywidgets
+
 ## Saturday, April 20, 2024
 
  1) mamba install conda-forge::openai
