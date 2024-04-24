@@ -95,6 +95,9 @@ Yup. Instruct.ipynb which did work is now failing with the same error message. F
 
 ... OK Nice! That fixed the problem! ...
 
+16) mamba install conda-forge::ipywidgets
+17) pip install trl
+
 ## Sunday, April 21, 2024
 
 Gonna pull down and play with ...
