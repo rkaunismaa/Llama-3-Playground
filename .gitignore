@@ -3,3 +3,6 @@ wandb/
 trl-tester/tmp_trainer/
 
 OrpoLlama-3-8B/
+
+results/
+resultsFT/
