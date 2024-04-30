@@ -4,6 +4,10 @@ This will be my playground for all things using LLaMa 3
 
 mamba activate llama3
 
+## Tuesday, April 30, 2024
+
+Working through the notebook from the Sam Witteveen video [Llama 3 - 8B & 70B Deep Dive](https://www.youtube.com/watch?v=8Ul_0jddTU4).
+
 ## Monday, April 29, 2024
 
 Working through the notebook referenced from the youtube video [Fine Tune Llama 3 using ORPO](https://www.youtube.com/watch?v=nPIGVaYPQAg)
