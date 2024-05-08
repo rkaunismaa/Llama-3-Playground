@@ -14,6 +14,8 @@ I then took the 'Prompt_Engineering_with_Llama_3.ipynb' notebook that works nice
 
 20) pip install openai
 
+I tried running the notebook 'finetuning/huggingface_trainer/peft_finetuning.ipynb' using 'meta-llama/Meta-Llama-3-8B', but this notebook is meant to work with Llama 2, not LLama 3, so I bailed on this and did not add the example from this repo.
+
 
 ## Tuesday, April 30, 2024
 
