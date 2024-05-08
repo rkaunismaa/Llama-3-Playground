@@ -4,9 +4,18 @@ This will be my playground for all things using LLaMa 3
 
 mamba activate llama3
 
+## Wednesday, May 8, 2024
+
+Looking at [Meta Llama Recipies](https://github.com/meta-llama/llama-recipes) for something to run. I will place these examples into the 'meta-llama/llama-recipies' folder.
+
+19) pip install groq
+
+
 ## Tuesday, April 30, 2024
 
 Working through the notebook from the Sam Witteveen video [Llama 3 - 8B & 70B Deep Dive](https://www.youtube.com/watch?v=8Ul_0jddTU4).
+
+* YT_Llama_3_8B_Testing.ipynb
 
 ## Monday, April 29, 2024
 
