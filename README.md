@@ -10,6 +10,10 @@ Looking at [Meta Llama Recipies](https://github.com/meta-llama/llama-recipes) fo
 
 19) pip install groq
 
+I then took the 'Prompt_Engineering_with_Llama_3.ipynb' notebook that works nicely with groq and copied it to 'Prompt_Engineering_with_Llama_3_LMStudio.ipynb' then tweaked that to work with LMStudio and not groq. This works just fine. 
+
+20) pip install openai
+
 
 ## Tuesday, April 30, 2024
 
