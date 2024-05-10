@@ -4,6 +4,12 @@ This will be my playground for all things using LLaMa 3
 
 mamba activate llama3
 
+## Friday, May 10, 2024
+
+Having a look at [nvidia/Llama3-ChatQA-1.5-8B](https://huggingface.co/nvidia/Llama3-ChatQA-1.5-8B) cuz why not ... 
+
+The second notbook sucks up all my memory and then VSCode shuts down ... meh.
+
 ## Wednesday, May 8, 2024
 
 Looking at [Meta Llama Recipies](https://github.com/meta-llama/llama-recipes) for something to run. I will place these examples into the 'meta-llama/llama-recipies' folder.
