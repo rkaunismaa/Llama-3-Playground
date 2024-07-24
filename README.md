@@ -235,3 +235,69 @@ It looks like we need to run ... 'pip install "transformers>=4.43" --upgrade'
         + tokenizers         0.19.1  py311h6640629_0  conda-forge     Cached
         - transformers       4.39.3  pyhd8ed1ab_0     conda-forge     Cached
         + transformers       4.43.1  pyhd8ed1ab_0     conda-forge        3MB
+
+OK. Gonna try some langchain stuff with Llama 3.1 ... gonna create a new environment for this.
+
+ 1) mamba create --name langchain5 --clone langchain4
+ 2) mamba activate langchain5
+ 3) mamba install conda-forge::transformers
+
+        Package             Version  Build         Channel           Size
+        ─────────────────────────────────────────────────────────────────────
+        Upgrade:
+        ─────────────────────────────────────────────────────────────────────
+
+        - ca-certificates  2024.2.2  hbcca054_0    conda-forge     Cached
+        + ca-certificates  2024.7.4  hbcca054_0    conda-forge     Cached
+        - openssl             3.3.0  hd590300_0    conda-forge     Cached
+        + openssl             3.3.1  h4bc722e_2    conda-forge     Cached
+        - certifi          2024.2.2  pyhd8ed1ab_0  conda-forge     Cached
+        + certifi          2024.7.4  pyhd8ed1ab_0  conda-forge     Cached
+        - huggingface_hub    0.22.2  pyhd8ed1ab_0  conda-forge     Cached
+        + huggingface_hub    0.24.0  pyhd8ed1ab_0  conda-forge     Cached
+        - transformers       4.40.1  pyhd8ed1ab_0  conda-forge     Cached
+        + transformers       4.43.1  pyhd8ed1ab_0  conda-forge     Cached
+
+        Summary:
+
+        Upgrade: 5 packages
+
+
+ 4) mamba install conda-forge::langchain 
+
+        Package                          Version  Build            Channel           Size
+        ─────────────────────────────────────────────────────────────────────────────────────
+        Install:
+        ─────────────────────────────────────────────────────────────────────────────────────
+
+        + langchain-core                  0.2.23  pyhd8ed1ab_0     conda-forge      247kB
+        + langchain                       0.2.11  pyhd8ed1ab_0     conda-forge      423kB
+
+        Upgrade:
+        ─────────────────────────────────────────────────────────────────────────────────────
+
+        - jsonschema                      4.21.1  pyhd8ed1ab_0     conda-forge     Cached
+        + jsonschema                      4.23.0  pyhd8ed1ab_0     conda-forge       74kB
+        - webcolors                         1.13  pyhd8ed1ab_0     conda-forge     Cached
+        + webcolors                       24.6.0  pyhd8ed1ab_0     conda-forge     Cached
+        - langsmith                       0.1.45  pyhd8ed1ab_0     conda-forge     Cached
+        + langsmith                       0.1.93  pyhd8ed1ab_0     conda-forge      113kB
+        - openai                          1.17.0  pyhd8ed1ab_0     conda-forge     Cached
+        + openai                          1.37.0  pyhd8ed1ab_0     conda-forge      164kB
+        - jsonschema-with-format-nongpl   4.21.1  pyhd8ed1ab_0     conda-forge     Cached
+        + jsonschema-with-format-nongpl   4.23.0  hd8ed1ab_0       conda-forge        7kB
+        - langchain-text-splitters         0.0.1  pyhd8ed1ab_0     conda-forge     Cached
+        + langchain-text-splitters         0.2.2  pyhd8ed1ab_0     conda-forge       27kB
+        - tiktoken                         0.5.2  py311h1069841_0  conda-forge     Cached
+        + tiktoken                         0.7.0  py311h339c092_0  conda-forge        1MB
+
+        Summary:
+
+        Install: 2 packages
+        Upgrade: 7 packages
+
+        Total download: 3MB
+
+Starting to run stuff in LLama 3.1/rag-agent-testing-local.ipynb, and right away, there is other stuff I need to install:
+
+ 5) pip install -U langchain-nomic
