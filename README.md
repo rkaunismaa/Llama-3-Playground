@@ -210,5 +210,28 @@ TRANSFORMERS_CACHE=/home/rob/Data2/huggingface/transformers
 
  ... also,  [llama-recipies](https://github.com/meta-llama/llama-recipes/tree/main) has been updated for llama3 ...
 
+## Wednesday, July 24, 2024
 
+Yesterday LLama 3.1 dropped, so let's grab the model and mess with it ... Code will go into the 'Llama 3.1' folder. 
 
+It looks like we need to run ... 'pip install "transformers>=4.43" --upgrade'
+
+11) mamba install conda-forge::transformers
+
+        Package             Version  Build            Channel           Size
+        ────────────────────────────────────────────────────────────────────────
+        Upgrade:
+        ────────────────────────────────────────────────────────────────────────
+
+        - ca-certificates  2024.2.2  hbcca054_0       conda-forge     Cached
+        + ca-certificates  2024.7.4  hbcca054_0       conda-forge     Cached
+        - openssl             3.2.1  hd590300_1       conda-forge     Cached
+        + openssl             3.3.1  h4bc722e_2       conda-forge        3MB
+        - certifi          2024.2.2  pyhd8ed1ab_0     conda-forge     Cached
+        + certifi          2024.7.4  pyhd8ed1ab_0     conda-forge     Cached
+        - huggingface_hub    0.22.2  pyhd8ed1ab_0     conda-forge     Cached
+        + huggingface_hub    0.24.0  pyhd8ed1ab_0     conda-forge      260kB
+        - tokenizers         0.15.2  py311h6640629_0  conda-forge     Cached
+        + tokenizers         0.19.1  py311h6640629_0  conda-forge     Cached
+        - transformers       4.39.3  pyhd8ed1ab_0     conda-forge     Cached
+        + transformers       4.43.1  pyhd8ed1ab_0     conda-forge        3MB
