@@ -301,3 +301,7 @@ OK. Gonna try some langchain stuff with Llama 3.1 ... gonna create a new environ
 Starting to run stuff in LLama 3.1/rag-agent-testing-local.ipynb, and right away, there is other stuff I need to install:
 
  5) pip install -U langchain-nomic
+ 6) pip install -U langchain-ollama
+ 7) pip install -U langgraph
+
+ OK Nice! I got all of 'Llama 3.1/rag-agent-testing-local.ipynb' to run!
