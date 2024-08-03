@@ -305,3 +305,9 @@ Starting to run stuff in LLama 3.1/rag-agent-testing-local.ipynb, and right away
  7) pip install -U langgraph
 
  OK Nice! I got all of 'Llama 3.1/rag-agent-testing-local.ipynb' to run!
+
+ ## Saturday, August 3, 2024
+
+ Add more Llama 3 examples of function calling using Groq. 
+
+ Ugh ... pinecone crap is failing ... gonna bail on 'Groq/rag-langchain-presidential-speeches.ipynb'
