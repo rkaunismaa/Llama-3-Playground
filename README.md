@@ -4,6 +4,10 @@ This will be my playground for all things using LLaMa 3
 
 mamba activate llama3
 
+## Tuesday, August 13, 2024
+
+Gonna revisit function calling with "NousResearch/Hermes-2-Pro-Llama-3-8B" ... based on this HuggingFace blog article [Tool Use, Unified](https://huggingface.co/blog/unified-tool-use) published August 12, 2024. The code is locally found in 'unified-tool-calling.ipynb'.
+
 ## Friday, May 10, 2024
 
 Having a look at [nvidia/Llama3-ChatQA-1.5-8B](https://huggingface.co/nvidia/Llama3-ChatQA-1.5-8B) cuz why not ... 
