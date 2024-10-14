@@ -4,6 +4,14 @@ This will be my playground for all things using LLaMa 3
 
 mamba activate llama3
 
+## Monday, October 14, 2024
+
+[Fine-Tuning 1B LLaMA 3.2: A Comprehensive Step-by-Step Guide with Code](https://huggingface.co/blog/ImranzamanML/fine-tuning-1b-llama-32-a-comprehensive-article)
+
+mamba activate unsloth_env2
+
+mamba install conda-forge::seaborn
+
 ## Tuesday, August 13, 2024
 
 Gonna revisit function calling with "NousResearch/Hermes-2-Pro-Llama-3-8B" ... based on this HuggingFace blog article [Tool Use, Unified](https://huggingface.co/blog/unified-tool-use) published August 12, 2024. The code is locally found in 'unified-tool-calling.ipynb'.
